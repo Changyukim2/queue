@@ -42,7 +42,7 @@ void queue_print(Queuetype *q) {
 		} while (i != q->front);
 
 	}
-	printf("\n");
+	printf("\n\n");
 }
 
 void enqueue(Queuetype* q, element item) {
@@ -82,7 +82,7 @@ int main(void) {
 		printf("1.input data and enqueue\n");
 		printf("2.dequeue and print data\n");
 		printf("3. print queue\n");
-		printf("4. exit\n");
+		printf("4. exit\n\n");
 		printf("select number: ");
 		scanf("%d", &num);
 		switch (num) {
@@ -90,11 +90,11 @@ int main(void) {
 			printf("input data:");
 			scanf("%d", &element);
 			enqueue(&queue, element);
-			printf("enqueue: %d\n", element);
+			printf("enqueue: %d\n\n", element);
 			break;
 		case 2:
 			
-			printf("dequeue : %d\n", dequeue(&queue));
+			printf("dequeue : %d\n\n", dequeue(&queue));
 			break;
 		case 3:
 			queue_print(&queue);
